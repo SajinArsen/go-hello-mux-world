@@ -38,6 +38,6 @@ func main() {
 		ReadTimeout:  15 * time.Second,
 	}
 
-	// Runn
+	// Run
 	log.Fatal(srv.ListenAndServe())
 }
