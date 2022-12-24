@@ -51,6 +51,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           timeout: "230s"
+          debug: true
           script: |
             cd qwer
             docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_TOKEN }} ${{ env.REGISTRY }}
